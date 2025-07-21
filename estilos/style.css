@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    height: 12vh;
+    background-image: linear-gradient(to left,gray,white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header>h1{
+    padding: 100px;
+}
+nav#contatos{
+    padding: 100px;
+}
+
+#contatos>a>img{
+    height: 30px;
+    margin: 15px;
+}
+#contatos>a>img:hover{
+   filter: contrast(60%);
+}
+aside#banner{
+    display: flex;
+    align-items: center;
+    background-image: url(../imagens/banner.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+}
+#dialogo{
+    padding: 50px;
+    font-size: 1.6em;
+}
