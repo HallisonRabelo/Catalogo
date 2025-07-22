@@ -30,7 +30,7 @@ nav#contatos{
 aside#banner{
     display: flex;
     align-items: center;
-    background-image: url(../imagens/banner.jpg);
+    background-image: url(../imagens/banner.gif);
     background-size: cover;
     width: 100vw;
     height: 60vh;
