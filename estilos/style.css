@@ -14,12 +14,12 @@ header{
 
 }
 header>h1{
-    padding: 100px;
+    padding: 3em;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
 }
 nav#contatos{
-    padding: 100px;
+    padding: 5em;
 }
 
 #contatos>a>img{
@@ -34,12 +34,84 @@ aside#banner{
     align-items: center;
     background-image: url(../imagens/banner.jpg);
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 60vh;
 }
 #dialogo{
-    padding: 50px;
+    padding: 2em;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 1.6em;
+}
+main{
+    display: none;
+}
+#titulo-sobre{
+    text-align: center;
+    margin: 1.5em;
+    background-color: bisque;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+#sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sobre>p{
+    width: 35vw;
+    text-align: justify;
+    margin: 0px 4em;
+    font-family: "Montserrat", sans-serif;
+}
+#sobre>img{
+    width: 30vw;
+    margin: 0px 4em;
+    border-radius: 15px;
+}
+#titulo-footer{
+    text-align: center;
+    margin: 1.5em;
+    background-color: bisque;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+#contatos-footer{
+    width: 35vw;
+}
+#contatos-footer>h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight:400;
+    text-align: center;
+}
+#contatos-footer>nav{
+    display: flex;
+    flex-flow: row;
+    float: left;
+}
+#contatos-footer a{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 1.6em;
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    
+}
+#contatos-footer img{
+    margin: 1em;
+}
+.imgcontatos{
+    height: 30px;
+}
+#mapa{
+    width: 30vw;
 }
