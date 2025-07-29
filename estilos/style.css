@@ -45,7 +45,31 @@ aside#banner{
     font-size: 1.6em;
 }
 main{
-    display: none;
+    
+
+}
+#catalogo{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.itens{
+    height: 290px;
+    width: 250px;
+    background-color: aqua;
+    margin: 7px;
+    display: flex;
+    flex-flow: column nowrap;
+    object-fit: cover;
+
+}
+.itens > img{
+    height: 90%;
+    width: 250px;
+    object-fit: contain;
 }
 #titulo-sobre{
     text-align: center;
@@ -107,7 +131,7 @@ footer{
     margin-top: 5em;
 }
 #local img{
-    height: 50px;
+    height: 40px;
 }
 #local p{
     text-align: center;
