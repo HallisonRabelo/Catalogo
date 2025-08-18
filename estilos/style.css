@@ -54,9 +54,9 @@ main{
     font-size: 2.3em;
     margin: 40px;
 }
-#catalogo{
+section#catalogo{
     width: 66%;
-    margin: auto;
+    margin: 100px auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -65,7 +65,8 @@ main{
 .itens{
     
     width: 252px;
-    margin: 7px;
+    margin: 10px;
+    margin-bottom: 20px;
     display: flex;
     flex-flow: column nowrap;
     object-fit: cover;
@@ -101,6 +102,9 @@ main{
     font-family: "Montserrat", sans-serif;
     font-size: small;
     padding: 5px;
+}
+.itens>a:hover{
+    filter: contrast(160%);
 }
 #titulo-sobre{
     text-align: center;
