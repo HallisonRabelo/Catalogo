@@ -40,7 +40,6 @@ aside#banner{
 }
 #dialogo{
     padding: 2em;
-    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 1.6em;
 }
@@ -48,8 +47,15 @@ main{
     
 
 }
+#titulo-section{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 2.3em;
+    margin: 40px;
+}
 #catalogo{
-    width: 65%;
+    width: 66%;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
@@ -57,19 +63,44 @@ main{
     align-items: center;
 }
 .itens{
-    height: 290px;
-    width: 250px;
-    background-color: aqua;
+    
+    width: 252px;
     margin: 7px;
     display: flex;
     flex-flow: column nowrap;
     object-fit: cover;
-
+    border: .5px solid rgba(0, 0, 0, 0.219);
+}
+.itens>h3{
+    height: 10%;
+    color: rgb(48, 47, 47);
+    text-align: center;
+    font-family: "Monteserrat",sans-serif;
+    font-size: medium;
+    font-weight: 300;
+    padding: 5px;
 }
 .itens > img{
     height: 90%;
     width: 250px;
-    object-fit: contain;
+    object-fit: cover;
+    
+}
+.itens>p{
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    padding: 5px;
+    text-align: center;
+}
+.itens>a{
+    height: 10%;
+    background-color: rgb(34, 182, 34);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    padding: 5px;
 }
 #titulo-sobre{
     text-align: center;
