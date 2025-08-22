@@ -8,7 +8,7 @@
 }
 header{
     height: 12vh;
-    background-image: linear-gradient(to left,gray,white);
+    background-image: linear-gradient(to left,bisque,white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,6 @@ header>h1{
 nav#contatos{
     padding: 5em;
 }
-
 #contatos>a>img{
     height: 30px;
     margin: 15px;
