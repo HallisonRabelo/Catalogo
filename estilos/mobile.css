@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-/* Header responsivo */
 header {
     background-color: bisque;
     display: flex;
@@ -15,48 +14,40 @@ header {
     align-items: center;
     padding: 15px;
     text-align: center;
+    height: auto;        /* deixa altura automática */
+    overflow: hidden;    /* garante que filhos não “escapem” */
 }
 
 header > h1 {
-    font-size: 1.6em;  /* fonte menor para caber bem */
-    margin-bottom: 10px; /* espaçamento entre título e botão */
+    font-size: 1.6em;
+    margin: 0 0 10px 0;   /* margem inferior controlada */
+    padding: 0;       
+    color: red;    /* remove padding excessivo */
 }
 
-/* Esconde os contatos grandes (desktop) */
 nav#contatos {
-    display: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0;            /* remove margens que empurram para fora */
+    padding: 0;
 }
 
-/* Mostra apenas o botão de contato mobile */
-nav#cttmobile {
-    display: block;
-    margin-top: 5px;
-}
-
-nav#cttmobile > a {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: rgb(81, 177, 81);
-    color: white;
-    font-size: 1em;
-    border-radius: 6px;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-
-nav#cttmobile > a:hover {
-    filter: brightness(0.9);
+nav#contatos a img {
+    height: 40px; /* ícones maiores no mobile */
+    display: block; /* garante que a imagem não “vaze” do flex */
 }
 
 /* Ajustes no banner */
 aside#banner {
-    height: 35vh;              /* reduz altura no mobile */
+    height: 35vh;              
     background-size: cover;
     background-position: center;
 }
 
 #dialogo {
-    font-size: 1.2em;           /* texto menor */
+    font-size: 1.2em;          
     padding: 1em;
 }
 
@@ -65,12 +56,12 @@ section#catalogo {
     width: 100%;
     margin: 30px auto;
     display: flex;
-    flex-direction: column;     /* produtos em coluna */
+    flex-direction: column;     
     align-items: center;
 }
 
 .itens {
-    width: 90%;                 /* ocupa quase toda largura */
+    width: 90%;                 
     max-width: 350px;
 }
 
