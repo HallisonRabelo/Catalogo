@@ -7,36 +7,28 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: bisque;
+header{
+    height: 12vh;
+    background-image: linear-gradient(to left,bisque,white);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    text-align: center;
-    height: auto;        /* deixa altura automática */
-    overflow: hidden;    /* garante que filhos não “escapem” */
-}
 
-header > h1 {
-    font-size: 1.6em;
-    margin: 0 0 10px 0;   /* margem inferior controlada */
-    padding: 0;       
-    color: red;    /* remove padding excessivo */
 }
-
-nav#contatos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 0;            /* remove margens que empurram para fora */
-    padding: 0;
+header>h1{
+    padding: 3em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
 }
-
-nav#contatos a img {
-    height: 40px; /* ícones maiores no mobile */
-    display: block; /* garante que a imagem não “vaze” do flex */
+nav#contatos{
+    padding: 5em;
+}
+#contatos>a>img{
+    height: 30px;
+    margin: 15px;
+}
+#contatos>a>img:hover{
+   filter: contrast(60%);
 }
 
 /* Ajustes no banner */
