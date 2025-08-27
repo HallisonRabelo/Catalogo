@@ -16,12 +16,12 @@ header{
 
 }
 header>h1{
-    padding: 3em;
+    padding: 1.5em;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
 }
 nav#contatos{
-    padding: 5em;
+    padding: 1.5em;
 }
 #contatos>a>img{
     height: 30px;
@@ -33,16 +33,19 @@ nav#contatos{
 
 /* Ajustes no banner */
 aside#banner {
-    height: 35vh;              
+    display: flex;
+    align-items: flex-end;
+    height: 30vh;              
     background-size: cover;
     background-position: center;
 }
 
 #dialogo {
-    font-size: 1.2em;          
-    padding: 1em;
+    display: none;
 }
-
+#titulo-section{
+  font-size: 1.8em;
+}
 /* Catálogo */
 section#catalogo {
     width: 100%;
@@ -52,9 +55,57 @@ section#catalogo {
     align-items: center;
 }
 
-.itens {
-    width: 90%;                 
-    max-width: 350px;
+section#catalogo{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.itens{
+    
+    width: 200px;
+    margin: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    object-fit: cover;
+    border: .5px solid rgba(0, 0, 0, 0.219);
+}
+.itens>h3{
+    height: 10%;
+    color: rgb(48, 47, 47);
+    text-align: center;
+    font-family: "Monteserrat",sans-serif;
+    font-size: medium;
+    font-weight: 300;
+    padding: 5px;
+}
+.itens > img{
+    height: 90%;
+    width: 200px;
+    object-fit: cover;
+    
+}
+.itens>p{
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    padding: 5px;
+    text-align: center;
+}
+.itens>a{
+    height: 10%;
+    background-color: rgb(34, 182, 34);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    padding: 5px;
+}
+.itens>a:hover{
+    filter: contrast(160%);
 }
 
 /* Sobre nós */
