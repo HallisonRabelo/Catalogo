@@ -135,7 +135,36 @@ section#catalogo{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
 }
-
+footer{
+    display: flex;
+    
+}
 #mapa{
-    width: 30vw;
+    width: 40vw;
+    margin: 3em;
+}
+#nav-footer{
+    background-color: rgba(255, 228, 196, 0.432);
+    width: 40vw;
+    height: 20vw;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    border-radius: 10px;
+    padding: 2em;
+}
+#nav-footer>a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: auto;
+    color: black;
+    font-size: larger;
+    font-family:  sans-serif;
+    font-weight: 100;
+    padding: 10px;
+}
+#nav-footer>a>img{
+    height: 25px;
+    margin: 10px
 }
