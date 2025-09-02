@@ -135,74 +135,7 @@ section#catalogo{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
 }
-footer{
-    display: flex;
-    justify-content: space-around;
-}
-#encontrar{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-}
-#endereco{
-    width: 55vw;
-}
-#endereco>h3{
-    font-family: "Montserrat", sans-serif;
-    font-weight:400;
-    text-align: center;
-    margin: 1.2em;
-    border-bottom: 1px solid black;
-}
-#local{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5em;
-}
-#local img{
-    height: 40px;
-}
-#local p{
-    text-align: center;
-    font-size: 1.1em;
-}
-#contatos-footer{
-    width: 55vw;
-    margin-bottom: 2em;
-    
-}
-#contatos-footer>h3{
-    font-family: "Montserrat", sans-serif;
-    font-weight:400;
-    text-align: center;
-    margin: 1.2em;
-    border-bottom: 1px solid black;
-}
-#contatos-footer>nav{
-    display: flex;
-    flex-flow: row wrap ;
-    justify-content: center;
-}
-#contatos-footer a{
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    margin: 1.6em;
-    text-decoration: none;
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-}
-#contatos-footer a:hover{
-    filter: contrast(60%);
-}
-#contatos-footer img{
-    margin: 1em;
-}
-.imgcontatos{
-    height: 30px;
-}
+
 #mapa{
     width: 30vw;
 }
