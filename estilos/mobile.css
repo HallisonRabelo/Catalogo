@@ -50,28 +50,15 @@ aside#banner {
 section#catalogo {
     width: 100%;
     margin: 30px auto;
-    display: flex;
-    flex-direction: column;     
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* sempre 2 colunas */
+    gap: 15px;
+    justify-items: center; /* centraliza os itens na célula */
 }
 
-section#catalogo{
-    width: 90%;
-    margin: 100px auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-.itens{
-    
-    width: 200px;
-    margin: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-flow: column nowrap;
-    object-fit: cover;
-    border: .5px solid rgba(0, 0, 0, 0.219);
+.itens {
+    width: 100%;
+    max-width: 200px;
 }
 .itens>h3{
     height: 10%;
