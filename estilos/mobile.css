@@ -59,6 +59,7 @@ section#catalogo {
 .itens {
     width: 100%;
     max-width: 200px;
+    
 }
 .itens>h3{
     height: 10%;
