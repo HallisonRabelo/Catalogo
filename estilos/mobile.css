@@ -134,6 +134,7 @@ footer{
 }
 #nav-footer{
     background-color: beige;
+    height: auto;
     width: 70vw;
     display: flex;
     flex-flow: column;
