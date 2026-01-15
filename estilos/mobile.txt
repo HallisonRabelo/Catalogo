@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Previne overflow horizontal */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+header{
+    height: 12vh;
+    background-image: linear-gradient(to left,bisque,white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px; /* Adiciona padding lateral */
+}
+
+header>h1{
+    padding: 1.2em 0.5em; /* Reduz padding lateral */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 1.7em; /* Reduz tamanho da fonte */
+}
+
+nav#contatos{
+    padding: 0.5em; /* Reduz padding */
+}
+
+#contatos>a>img{
+    height: 25px; /* Reduz tamanho dos ícones */
+    margin: 8px; /* Reduz margem */
+}
+
+#contatos>a>img:hover{
+   filter: contrast(60%);
+}
+
+/* Ajustes no banner */
+aside#banner {
+    display: flex;
+    align-items: flex-end;
+    height: 30vh;              
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+#dialogo {
+    display: none;
+}
+
+#titulo-section{
+    font-size: 1.8em;
+    margin: 20px 10px; /* Adiciona margem lateral */
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+/* Catálogo - Principal correção aqui */
+section#catalogo {
+    width: 100%;
+    max-width: 100vw; /* Garante que não exceda a viewport */
+    margin: 30px 0; /* Remove margem lateral auto */
+    padding: 0 15px; /* Adiciona padding lateral para espaçamento */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+.itens {
+    width: 100%;
+    max-width: 160px; /* Reduz um pouco o tamanho máximo */
+    border: .5px solid rgba(0, 0, 0, 0.219);
+    display: flex;
+    flex-direction: column;
+}
+
+.itens>h3{
+    color: rgb(48, 47, 47);
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    font-size: small; /* Reduz tamanho da fonte */
+    font-weight: 300;
+    padding: 8px 5px;
+}
+
+.itens > img{
+    width: 100%;
+    height: 120px; /* Define altura fixa */
+    object-fit: cover;
+}
+
+.itens>p{
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    padding: 5px;
+    text-align: center;
+}
+
+.itens>a{
+    background-color: rgb(34, 182, 34);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    padding: 8px 5px;
+    margin-top: auto; /* Empurra o botão para baixo */
+}
+
+.itens>a:hover{
+    filter: contrast(160%);
+}
+
+/* Sobre nós */
+#titulo-sobre{
+    margin: 10px 15px; /* Adiciona margem lateral */
+    text-align: center;
+    background-color: bisque;
+    border-radius: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px; /* Adiciona padding lateral */
+    width: 100%;
+}
+
+#sobre > p {
+    width: 100%;
+    margin: 10px 0;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+}
+
+#sobre > img {
+    width: 100%;
+    max-width: 300px; /* Limita tamanho máximo */
+    margin: 10px 0;
+    border-radius: 15px;
+}
+
+#titulo-footer{
+    width: calc(100% - 30px); /* Considera o espaçamento lateral */
+    text-align: center;
+    margin: 1.5em 15px; /* Adiciona margem lateral */
+    background-color: bisque;
+    border-radius: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px; /* Adiciona padding lateral */
+    width: 100%;
+}
+
+#mapa{
+    width: 100%;
+    max-width: 100%;
+    height: 250px; /* Define altura fixa */
+    margin: 0 auto 20px auto;
+}
+
+#nav-footer{
+    background-color: rgba(255, 228, 196, 0.432);
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#nav-footer>a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: medium; /* Reduz tamanho da fonte */
+    font-family: sans-serif;
+    font-weight: 100;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+#nav-footer>a>img{
+    height: 20px; /* Reduz tamanho dos ícones */
+    margin-right: 10px;
+    flex-shrink: 0; /* Impede que a imagem encolha */
+}
