@@ -1,9 +1,18 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --azul-escuro:#2b28e0;
+    --azul-medio: #004AF5;
+    --azul-claro:#0097F5;
+    --cinza:#3B4B73;
+}
 body{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    background-color: #004af5dc;
+   
+
     font-family: "Roboto", sans-serif;
 }
 main{
@@ -13,24 +22,60 @@ main{
     align-items: center;
 
 }
-#login{
+
+div#login{
+    width: 500px;
     flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: x-large;
     text-align: end;
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 20px;
+    padding: 20px;
 }
-#login > p{
-    margin: 0px;
+#login h1{
+    font-family: "Roboto",sans-serif;
+    font-size: 2.1em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.623);
+    margin: 5px;
 }
-#botao{
-    
+#login h2{
+    font-family: "Roboto",sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
     text-align: center;
+    color: rgba(0, 0, 0, 0.623);
+    margin: 5px;
+    
+}
+input:focus{
+    outline:none;/*Remove contorno da caixa de seleção*/
+}
+p.caixa > input{
+    height: 40px;
+    width: 250px;
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+    font-weight: 500;
+    border: 1px;
+    border-radius: 20px;
+    text-align: left;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.151);
 }
 #botao >  input{
     font-size: large;
     font-weight: 500;
-    height: 60px;
-    width: 250px;
-    background-color: rgba(0, 0, 0, 0.911);
+    background-color: rgba(0, 0, 0, 0.623);
     color: white;
-    border-radius: 40px;
+    border: 1px;
+    border-radius: 20px;
+    text-align: center;
+}
+#botao:hover{
+    background-color: var(--azul-medio);
+    border-radius: 20px;
 }
