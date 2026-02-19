@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área administrativa</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <title>Página do administrador</title>
 </head>
 <body>
-    <main>
-        <div id="login">
-            <h1>Login</h1>
-            <h2>Faça seu login para acessar o ambiente administrativo</h2>
-            <Form action="http://localhost/showroom/login.php" method="post">
-                <p class="caixa"> <input type="text" name="usuario" id="idusuario" placeholder="Usuário"></p>
-                <p class="caixa"> <input type="password" name="senha" id="idsenha" placeholder="Senha"></p>
-                <p class="caixa" id="botao"><input type="submit" value="Acessar"></p>
-            </Form>
-        </div>''
-    </main>
+        <form action="http://localhost/showroom/admin.php" method="POST" enctype="multipart/form-data">
+            <label for="iimagem">Imagem</label>
+            <input type="file" name="imagem" id="iimagem">
+            <br>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome">
+            <br>
+            <label for="ipreco">Preço</label>
+            <input type="number" name="preco" id="ipreco">
+            
+            <input type="submit" value="Enviar">
+        </form>
 </body>
 </html>
